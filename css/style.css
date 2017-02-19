@@ -2,4 +2,46 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+/* Reusable Classes */
+.input-text{
+    border: none;
+    border-bottom: 2px solid #539cce;
+    color: #FFF;
+    background: none;
+    outline: none;
+    transition: border 0.25s;
+}
+
+.input-text:focus {
+    border-bottom: 2px solid #19B5FE;
+}
+
+.input-text::-webkit-input-placeholder{
+    color: #539cce;
+}
+
+/* END of Reusable Classes */
+
+
+
+.header{
+    background-color: #2574A9;
+    height: 50px;
+}
+
+.header-menu{
+    font-size: 32px;
+    color: #FFF;
+    cursor: pointer;
+    float: left;
+    margin-left: 12px;
+}
+
+.header-search{
+    margin: 12px 12px 0 0;
+    float: right;
+    font-size: 18px;
 }
