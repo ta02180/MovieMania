@@ -1,0 +1,70 @@
+# MovieMania
+Web Software School Team Project
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home - Bechdel Test</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="#">
+    
+    <style media="screen" type="text/css">
+      .read-state {
+  display: none;
+}
+
+.read-target {
+  opacity: 0;
+  font-size: 0;
+}
+
+.read-state:checked ~ .read-more .read-target {
+  opacity: 1;
+  font-size: inherit;
+}
+
+.read-state ~ .read-clicked:before {
+  content: 'Read More';
+}
+
+.read-state:checked ~ .read-clicked:before {
+  content: 'Read Less';
+}
+
+.read-clicked {
+  display: inline-block;
+  padding: 0 9px;
+  font-size: 15px;
+  line-height: 2;
+}
+    
+     </style>
+</head>
+
+<body ng-app="MovieMania">
+    <header-template></header-template>
+
+<div>
+  <input type="checkbox" class="read-state" id="post-2"/>
+
+  <div class="read-more">
+    <h1>A Movie</h1>
+    <p>Review review review. . . </p>
+    <p class="read-target">Keepin up with that review wow.</p>
+  </div>
+  
+  <label for="post-2" class="read-clicked"></label>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
