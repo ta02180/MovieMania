@@ -24,7 +24,9 @@ body{
 
 /* END of Reusable Classes */
 
-
+* {
+    box-sizing: border-box;
+}
 
 .header{
     background-color: #2574A9;
@@ -98,4 +100,76 @@ body{
     font-weight: 600;
     color: #000;
     margin-left: 28px;
+}
+
+.read-state {
+  display: none;
+}
+
+.read-target {
+  opacity: 0;
+  font-size: 0;
+}
+
+.read-state:checked ~ .read-more .read-target {
+  opacity: 1;
+  font-size: inherit;
+}
+
+.read-state ~ .read-clicked:before {
+  content: 'Read More';
+}
+
+.read-state:checked ~ .read-clicked:before {
+  content: 'Read Less';
+}
+
+.read-clicked {
+  display: inline-block;
+  padding: 0 9px;
+  font-size: 15px;
+  line-height: 2;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-bechdel"] {
+        width: 100%;
+    }
+
+
+[class*="col-bechdel"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+.vid-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 35px; height: 0; overflow: hidden;
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+}
+
+h2{
+    text-align: center;
 }
