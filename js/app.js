@@ -8,5 +8,12 @@ angular.module('MovieMania', [])
     return {
         templateUrl : "js/templates/header.html"
     };
+})
+
+.directive("footerTemplate", function() {
+    return {
+        templateUrl : "js/templates/footer.html"
+    };
 });
+
 
