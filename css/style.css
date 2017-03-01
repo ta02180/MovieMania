@@ -29,7 +29,7 @@ body{
 }
 
 .header{
-    background-color: #2574A9;
+    background-color: #2196F3;
     height: 50px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -172,4 +172,45 @@ hr{
 
 h2{
     text-align: center;
+}
+
+footer{
+    background-color: #2196F3;
+    clear: both;
+    height: 200px;
+    margin-top: 12px;
+    color: #FFF;
+}
+.footer-content{
+    width: 60%;
+    float: left;
+    height: 175px;
+}
+
+.content-title{
+    margin: 12px 12px 6px 12px;
+}
+
+.content-body{
+    margin: 12px 12px 6px 12px;
+}
+
+.links-title{
+    margin: 12px 12px 6px 12px;
+}
+
+
+.footer-links{
+    width: 40%;
+    float: left;
+    height: 175px;
+}
+
+.footer-copyright{
+    background-color: #1E88E5;
+    height: 25px;
+    text-align: center;
+    clear: both;
+    font-size: 12px;
+    padding-top:5px;
 }
