@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home - Movie Mania</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="#">
+	<style>
+		* {
+		box-sizing: border-box;
+		}
+		.row::after {
+		content: "";
+		clear: both;
+		display: table;
+		}
+		html {
+		font-family: "Lucida Sans", sans-serif;
+		}
+		h2 {
+		text-align:center;
+		}
+		img {
+		border: 1px solid black;
+		}
+		@media only screen and (max-width: 768px){
+		[class*="col-1"] {
+		width: 100%;
+		}
+		[class*="col-"] {
+		float: left;
+		padding: 15px;
+		border: 1px solid black;
+		margin-bottom: 15px;
+		}
+		.row {
+		margin-right: 12px;
+		margin-left: 12px;
+		}
+		}
+	</style>
+</head>
+
+
+<body ng-app="MovieMania" class="ng-scope">
+    <header-template></header-template>
+
+    <div>
+        <h1>Top Rated Reviews</h1>
+        <section>
+            <div>
+                <img src="images/thehelp3.jpg" class="thumbnail" alt="The Help">
+                <div class="caption">
+                    <h6>The Help &#9733;&#9733;&#9733;&#9733;&#9733; </h6>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/beetlejuice.jpg" class="thumbnail" alt="Beetlejuice">
+                <div class="caption">
+                    <h6>Beetlejuice &#9733;&#9733;&#9733;</h6>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/thedarkknightrises.jpg" class="thumbnail" alt="The Dark Knight Rises">
+                <div class="caption">
+                    <h6>The Dark Knight Rises &#9733;&#9733;</h6>
+                </div>
+            </div>
+        </section>
+    </div>
+	<hr>
+
+    <div class="recentreviews">
+		<h1>Recent Reviews</h1>
+			<div class="recentreviews2">
+				<img src="images/thehelp3.jpg" class="thumb" alt="The Help">
+				<h5>The Help <br> 03-23-17</h5>
+				<p>...............</p>
+			</div>
+			<div class="recentreviews2">
+				<img src="images/thedarkknightrises.jpg" class="thumb" alt="Beetlejuice">
+				<h5>Beetlejuice <br> 02-01-17</h5>
+				<p>...............</p>
+			</div>
+    </div>
+
+
+	<div class="allreviews">
+	<h1>All Reviews</h1>
+			<div class="allreviews2">
+				<img src="images/beetlejuice.jpg" class="thumb" alt="Beetlejuice">
+				<h5>Beetlejuice <br> 02-01-17</h5>
+				<p>...............</p>
+			</div>
+			<div class="allreviews2">
+				<img src="images/thedarkknightrises.jpg" class="thumb" alt="The Dark Knight Rises">
+				<h5>The Dark Knight Rises <br> 03-15-15</h5>
+				<p>...............</p>
+			</div>
+			<div class="allreviews2">
+				<img src="images/thehelp3.jpg" class="thumb" alt="The Help">
+				<h5>The Help <br> 03-23-17</h5>
+				<p>...............</p>
+			</div>
+			<div class="allreviews2">
+				<img src="images/lifeofbrian.jpg" class="thumb" alt="Life of Brian">
+				<h5>Life of Brian <br> 05-10-16</h5>
+				<p>...............</p>
+			</div>
+			<div class="allreviews2">
+				<img src="images/sailormoon2.jpg" class="thumb" alt="Sailor Moon">
+				<h5>Sailor Moon <br> 12-22-10</h5>
+				<p>...............</p>
+			</div>
+    </div>
+
+
+    <footer-template></footer-template>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

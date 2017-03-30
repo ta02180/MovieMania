@@ -22,12 +22,54 @@ body{
     color: #EEEEEE;
 }
 
+.button{
+    border-radius: 2px;
+    padding: 8px 12px;
+    background-color: #FF9800;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.25s;
+}
+
+.button:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 /* END of Reusable Classes */
 
+* {
+    box-sizing: border-box;
+}
 
+.thumbnail{
+	float:center;
+	width:45%;
+}
+
+.thumb {
+	float:left;
+    width: 100px;
+}
+
+.recentreviews,
+.allreviews
+ {
+	clear: left;
+	padding: 15px;
+	
+}
+
+.recentreviews2,
+.allreviews2 {
+	clear: left;
+	padding: 10px;
+	
+}
 
 .header{
-    background-color: #2574A9;
+    background-color: #2196F3;
     height: 50px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -98,4 +140,158 @@ body{
     font-weight: 600;
     color: #000;
     margin-left: 28px;
+}
+
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+
+.read-state {
+  display: none;
+}
+
+.read-target {
+  opacity: 0;
+  font-size: 0;
+}
+
+.read-state:checked ~ .read-more .read-target {
+  opacity: 1;
+  font-size: inherit;
+}
+
+.read-state ~ .read-clicked:before {
+  content: 'Read More';
+}
+
+.read-state:checked ~ .read-clicked:before {
+  content: 'Read Less';
+}
+
+.read-clicked {
+  display: inline-block;
+  padding: 0 9px;
+  font-size: 15px;
+  line-height: 2;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-bechdel"] {
+        width: 100%;
+    }
+
+
+[class*="col-bechdel"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+.vid-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 35px; height: 0; overflow: hidden;
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    background-color: #2196F3;
+    clear: both;
+    height: 200px;
+    margin-top: 12px;
+    color: #FFF;
+}
+.footer-content{
+    width: 60%;
+    float: left;
+    height: 175px;
+}
+
+.content-title{
+    margin: 12px 12px 6px 12px;
+}
+
+.content-body{
+    margin: 12px 12px 6px 12px;
+}
+
+.links-title{
+    margin: 12px 12px 6px 12px;
+}
+
+
+.footer-links{
+    width: 40%;
+    float: left;
+    height: 175px;
+}
+
+.footer-copyright{
+    background-color: #1E88E5;
+    height: 25px;
+    text-align: center;
+    clear: both;
+    font-size: 12px;
+    padding-top:5px;
+}
+
+.header-links{
+   display: none;
+}
+
+
+@media screen and (min-width: 960px) {
+    .header-menu{
+        display: none;
+    }
+
+    .header-links{
+        float: left;
+        height: 50px;
+        display: block;
+        margin-left: 50px;
+    }
+
+    .header-link{
+        padding: 13px 14px;
+        float: left;
+        color: #FFF;
+        text-decoration: none;
+        margin: 0px 12px;
+        font-size: 18px;
+        transition: 0.25s;
+    }
+
+    .header-link:hover{
+        background-color: #208bde;
+    }
+
 }
