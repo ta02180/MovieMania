@@ -29,4 +29,18 @@ $(function () {
             $(".fa-home").css("color", "#2574A9");
         }
     });
+
+    $('#rating').on("change mousemove", function() {
+        if($(this).val() == 1){
+            $('.poll-stars').html('&#9733;');
+        }else if($(this).val() == 2){
+            $('.poll-stars').html('&#9733; &#9733;');
+        }else if($(this).val() == 3){
+            $('.poll-stars').html('&#9733; &#9733; &#9733;');
+        }else if($(this).val() == 4){
+            $('.poll-stars').html('&#9733; &#9733; &#9733; &#9733;');
+        }else if($(this).val() == 5){
+            $('.poll-stars').html('&#9733; &#9733; &#9733; &#9733; &#9733;');
+        }
+    });
 })
