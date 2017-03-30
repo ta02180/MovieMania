@@ -85,20 +85,6 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
 }
 
-.poll-gender, .poll-rating, .poll-submit{
-    padding: 12px;
-}
-
-.poll-stars{
-    text-align: center;
-    font-size: 24px;
-    color: #9E9E9E;
-}
-
-.poll-submit{
-    text-align: center;
-}
-
 .button{
     border-radius: 2px;
     padding: 8px 12px;
@@ -123,6 +109,20 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 /* END of Reusable Classes */
+
+.poll-gender, .poll-rating, .poll-submit{
+    padding: 12px;
+}
+
+.poll-stars{
+    text-align: center;
+    font-size: 24px;
+    color: #9E9E9E;
+}
+
+.poll-submit{
+    text-align: center;
+}
 
 * {
     box-sizing: border-box;
@@ -165,6 +165,14 @@ input[type=range]::-webkit-slider-runnable-track {
     cursor: pointer;
     float: left;
     margin-left: 12px;
+}
+
+.header-logo{
+    float: left;
+    height: 50px;
+    width: 200px;
+    background: url("images/MovieMania.svg");
+    background-size: 200px;
 }
 
 .header-search{
