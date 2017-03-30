@@ -298,9 +298,11 @@ section {
 
 }
 
+
+
 hr{
     width: 100%;
-    height: 2px;
+    border: 1px solid #808080; 
 }
 
 h2{
@@ -352,6 +354,37 @@ footer{
    display: none;
 }
 
+@media screen and (min-width: 769px) {
+    [class*="col-bechdel"] {
+        width: 100%;
+    }
+    [class*="col-bechdel"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+.vid-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 35px; height: 0; overflow: hidden;
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    .vid-container{
+        border: 3px solid #808080;
+    }    
+}
 
 @media screen and (min-width: 960px) {
     .header-menu{
@@ -378,5 +411,15 @@ footer{
     .header-link:hover{
         background-color: #208bde;
     }
+    [class*="col-bechdel"] {
+        width: 50%;
+    }
 
+
+    [class*="col-bechdel"] {
+        float: left;
+        padding: 15px;
+    }
+    
 }
+
