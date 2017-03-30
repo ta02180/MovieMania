@@ -30,6 +30,7 @@ body{
     cursor: pointer;
     text-decoration: none;
     color: #FFF;
+    transition: 0.25s;
 }
 
 .button:hover{
@@ -260,4 +261,37 @@ footer{
     clear: both;
     font-size: 12px;
     padding-top:5px;
+}
+
+.header-links{
+   display: none;
+}
+
+
+@media screen and (min-width: 960px) {
+    .header-menu{
+        display: none;
+    }
+
+    .header-links{
+        float: left;
+        height: 50px;
+        display: block;
+        margin-left: 50px;
+    }
+
+    .header-link{
+        padding: 13px 14px;
+        float: left;
+        color: #FFF;
+        text-decoration: none;
+        margin: 0px 12px;
+        font-size: 18px;
+        transition: 0.25s;
+    }
+
+    .header-link:hover{
+        background-color: #208bde;
+    }
+
 }
