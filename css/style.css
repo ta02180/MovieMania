@@ -71,21 +71,8 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
 }
 
-.poll-gender, .poll-rating, .poll-submit{
-    padding: 12px;
-}
- 
-.poll-stars{
-    text-align: center;
-    font-size: 24px;
-     color: #9E9E9E;
-}
- 
- .poll-submit{
-    text-align: center;
- }
- 
- .button{
+
+.button{
     border-radius: 2px;
     padding: 8px 12px;
     background-color: #FF9800;
@@ -108,8 +95,27 @@ input[type=range]::-webkit-slider-runnable-track {
     padding: 24px;
 }
 
-  /* END of Reusable Classes */
-  
+
+/* END of Reusable Classes */
+
+.poll-gender, .poll-rating, .poll-submit{
+    padding: 12px;
+}
+
+.poll-stars{
+    text-align: center;
+    font-size: 24px;
+    color: #9E9E9E;
+}
+
+.poll-submit{
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 
   * {
       box-sizing: border-box;
@@ -152,6 +158,196 @@ img {
 	height: auto;
 }
 
+
+.header-logo{
+    float: left;
+    height: 50px;
+    width: 200px;
+    background: url("images/MovieMania.svg");
+    background-size: 200px;
+}
+
+.header-search{
+    margin: 12px 12px 0 0;
+    float: right;
+    font-size: 18px;
+}
+
+.search-section{
+    float:right;
+}
+
+.search-icon{
+    color: #FFF;
+    font-size: 18px !important;
+    position:relative;
+    right:6px;
+    top: 12px;
+}
+
+
+.nav-menu{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    z-index: 5;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    left:-250px;
+}
+
+.nav-background-cover{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: #000;
+    opacity: 0;
+    z-index: 4;
+    display: none;
+}
+.nav-link{
+    float:left;
+    width: 226px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: #DADFE1;
+}
+
+.first-link{
+    margin-top: 50px;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    margin-left: 28px;
+}
+
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+
+.read-state {
+  display: none;
+}
+
+.read-target {
+  opacity: 0;
+  font-size: 0;
+}
+
+.read-state:checked ~ .read-more .read-target {
+  opacity: 1;
+  font-size: inherit;
+}
+
+.read-state ~ .read-clicked:before {
+  content: 'Read More';
+}
+
+.read-state:checked ~ .read-clicked:before {
+  content: 'Read Less';
+}
+
+.read-clicked {
+  display: inline-block;
+  padding: 0 9px;
+  font-size: 15px;
+  line-height: 2;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-bechdel"] {
+        width: 100%;
+    }
+
+
+[class*="col-bechdel"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+.vid-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 35px; height: 0; overflow: hidden;
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    background-color: #2196F3;
+    clear: both;
+    height: 200px;
+    margin-top: 12px;
+    color: #FFF;
+}
+.footer-content{
+    width: 60%;
+    float: left;
+    height: 175px;
+}
+
+.content-title{
+    margin: 12px 12px 6px 12px;
+}
+
+.content-body{
+    margin: 12px 12px 6px 12px;
+}
+
+.links-title{
+    margin: 12px 12px 6px 12px;
+}
+
+
+.footer-links{
+    width: 40%;
+    float: left;
+    height: 175px;
+}
+
+.footer-copyright{
+    background-color: #1E88E5;
+    height: 25px;
+    text-align: center;
+    clear: both;
+    font-size: 12px;
+    padding-top:5px;
+}
+
   
   
   @media only screen and (max-width: 768px) {
@@ -159,6 +355,7 @@ img {
       font-size: 12px;
       padding-top:5px;
   }
+
 
 .header-links{
    display: none;
