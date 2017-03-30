@@ -1,28 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    background: #e2e1e0;
-}
-
-/* Reusable Classes */
-.input-text{
-    border: none;
-    border-bottom: 1px solid #FFF;
-    color: #FFF;
-    background: none;
-    outline: none;
-}
-
-.input-text:focus {
-    border-bottom: 2px solid #FFF;
-}
-
-.input-text::-webkit-input-placeholder{
-    color: #EEEEEE;
-}
-
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background: #e2e1e0;
+  }
+  
+  /* Reusable Classes */
+ @@ -23,136 +22,13 @@ body{
+      color: #EEEEEE;
+  }
+  
 .input-gray{
     color: #000;
     border-bottom: 1px solid #9E9E9E;
@@ -68,7 +54,7 @@ input[type=range]::-webkit-slider-thumb:hover {
     border-radius: 18px;
     margin-top: -8px;
 }
-
+ 
 input[type=range]::-webkit-slider-thumb:active {
     height: 20px;
     width: 20px;
@@ -85,12 +71,13 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
 }
 
+
 .button{
     border-radius: 2px;
     padding: 8px 12px;
     background-color: #FF9800;
 
-    cursor: pointer;
+   cursor: pointer;
     text-decoration: none;
     color: #FFF;
     transition: 0.25s;
@@ -107,6 +94,7 @@ input[type=range]::-webkit-slider-runnable-track {
     background-color: #FFF;
     padding: 24px;
 }
+
 
 /* END of Reusable Classes */
 
@@ -128,6 +116,11 @@ input[type=range]::-webkit-slider-runnable-track {
     box-sizing: border-box;
 }
 
+
+  * {
+      box-sizing: border-box;
+  }
+  
 .thumbnail{
 	float:center;
 	width:45%;
@@ -153,19 +146,18 @@ input[type=range]::-webkit-slider-runnable-track {
 	
 }
 
-.header{
-    background-color: #2196F3;
-    height: 50px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  .header{
+      background-color: #2196F3;
+      height: 50px;
+ @@ -264,6 +140,11 @@ section {
+    line-height: 2;
+  }
+  
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-.header-menu{
-    font-size: 32px;
-    color: #FFF;
-    cursor: pointer;
-    float: left;
-    margin-left: 12px;
-}
 
 .header-logo{
     float: left;
@@ -356,6 +348,15 @@ footer{
     padding-top:5px;
 }
 
+  
+  
+  @media only screen and (max-width: 768px) {
+ @@ -347,36 +228,3 @@ footer{
+      font-size: 12px;
+      padding-top:5px;
+  }
+
+
 .header-links{
    display: none;
 }
@@ -374,7 +375,7 @@ footer{
     }
 
     .header-link{
-        padding: 13px 14px;
+       padding: 13px 14px;
         float: left;
         color: #FFF;
         text-decoration: none;
