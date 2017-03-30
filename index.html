@@ -6,59 +6,132 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home - Bechdel Test</title>
+    <title>Home - Movie Mania</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="#">
-    
-    <style media="screen" type="text/css">
-      .read-state {
-  display: none;
-}
-
-.read-target {
-  opacity: 0;
-  font-size: 0;
-}
-
-.read-state:checked ~ .read-more .read-target {
-  opacity: 1;
-  font-size: inherit;
-}
-
-.read-state ~ .read-clicked:before {
-  content: 'Read More';
-}
-
-.read-state:checked ~ .read-clicked:before {
-  content: 'Read Less';
-}
-
-.read-clicked {
-  display: inline-block;
-  padding: 0 9px;
-  font-size: 15px;
-  line-height: 2;
-}
-    
-     </style>
+	<style>
+		* {
+		box-sizing: border-box;
+		}
+		.row::after {
+		content: "";
+		clear: both;
+		display: table;
+		}
+		html {
+		font-family: "Lucida Sans", sans-serif;
+		}
+		h2 {
+		text-align:center;
+		}
+		img {
+		border: 1px solid black;
+		}
+		@media only screen and (max-width: 768px){
+		[class*="col-1"] {
+		width: 100%;
+		}
+		[class*="col-"] {
+		float: left;
+		padding: 15px;
+		border: 1px solid black;
+		margin-bottom: 15px;
+		}
+		.row {
+		margin-right: 12px;
+		margin-left: 12px;
+		}
+		}
+	</style>
 </head>
 
-<body ng-app="MovieMania">
+
+<body ng-app="MovieMania" class="ng-scope">
     <header-template></header-template>
 
-<div>
-  <input type="checkbox" class="read-state" id="post-2"/>
+       <div>
+        <h1>Top Rated Reviews</h1>
+        <section>
+            <div>
+                <img src="images/thehelp3.jpg" class="thumbnail" alt="The Help">
+                <div class="caption">
+                    <h6>The Help &#9733;&#9733;&#9733;&#9733;&#9733; </h6>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/beetlejuice.jpg" class="thumbnail" alt="Beetlejuice">
+                <div class="caption">
+                    <h6>Beetlejuice &#9733;&#9733;&#9733;</h6>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/thedarkknightrises.jpg" class="thumbnail" alt="">
+                <div class="caption">
+                    <h6>The Dark Knight Rises &#9733;&#9733;</h6>
+                </div>
+            </div>
+        </section>
+    </div>
+	<hr>
 
-  <div class="read-more">
-    <h1>A Movie</h1>
-    <p>Review review review. . . </p>
-    <p class="read-target">Keepin up with that review wow.</p>
-  </div>
-  
-  <label for="post-2" class="read-clicked"></label>
-</div>
+    <div class="recentreview">
+        <input type="checkbox" class="read-state" id="post-2"/>
 
+        <div class="read-more">
+            <h1><a href="reviewandpollpage.html">Moana</a></h1>
+            <p>Moana is a story about an explorative young polynesian girl fighting to save her island home. . . </p>
+            <p class="read-target">Moana is a story about an explorative young polynesian girl fighting to save her island home from collapse. To restore her land's resources, she must find and capture demi-god Maui and force him to return something dear he has stolen from the island.</p>
+		<p class="read-target">Through the harrowing journey across many seas, she discovers herself and her past, and is then able to lead a way-finding revolution amongst her people, who have been afraid of the sea for far too long.</p>
+		<p class="read-target">Moana features a bright, determined, strongwilled young girl as it's centerpiece and is notable for the fact that she is not just a mere princess waiting for her prince to come along. She is lined up to be the next chief, regardless of her marital status. Before she even takes the role, she is an excellent leader to her people, solving problems and keeping peace with a natural ease.</p>
+		<p class="read-target">The story also highlights Moana's reationship with her grandmother, who encourages her to chase her fantasies and take to the seas (something forbidden at the time) if she wishes.</p>
+		<p class="read-target">This is a great family movie, filled with adventure, cunning, self-exploration, and danger, not to mention a beautiful island backdrop and some fun musical numbers along the way!</p>
+        </div>
+
+        <label for="post-2" class="read-clicked"></label>
+    </div>
+
+    <div class="row">
+
+        <div class="col-1">
+            <img src="http://agogspecialeffects.co.uk/wp-content/uploads/2014/02/coach-explosion-special-effect_Coriolanus2k.jpg" alt="explosions" width="100%" >
+            <h2>Action</h2>
+        </div>
+
+        <div class="col-1">
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/08/20/19/comedy.jpg" alt="laughing audience" width="100%" height="80%">
+            <h2>Comedy</h2>
+        </div>
+
+        <div class="col-1">
+        <img src="http://www.kitaab.com/wp-content/uploads/2016/06/6de53d85d5549b90735ea869afd0381b.jpg" alt="hands making a heart" width="100%" >
+        <h2>Romance</h2>
+        </div>
+
+
+
+        <div class="col-1">
+            <img src="http://cdn-media.backstage.com/files/media/uploads/zinnia/2016/10/04/atlanta-horror-film-festival-monsterama-horrorquest-buried-alive-forweb.jpg.644x440_q100.jpg" alt="zombie hand" width="100%" >
+            <h2>Horror</h2>
+        </div>
+
+        <div class="col-1">
+            <img src="https://i.kinja-img.com/gawker-media/image/upload/s--PMvSWkwx--/c_scale,fl_progressive,q_80,w_800/si4kgxpl8mznvfcvcgwq.jpg" alt="space travel" width="100%" >
+            <h2>Science Fiction</h2>
+        </div>
+
+        <div class="col-1">
+            <img src="http://az616578.vo.msecnd.net/files/2016/04/14/635962421010033786-1637215161_Drama.png" alt="drama masks" width="100%" >
+            <h2>Drama</h2>
+        </div>
+
+    </div>
+
+    <footer-template></footer-template>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
