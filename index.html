@@ -38,6 +38,9 @@
 		border: 1px solid black;
 		margin-bottom: 15px;
 		}
+		.row {
+		margin-right: 12px;
+		margin-left: 12px;
 		}
 		}
 	</style>
@@ -46,7 +49,7 @@
 <body ng-app="MovieMania">
     <header-template></header-template>
 
-       <div>
+       <div class="row">
         <h1>Top Rated Reviews</h1>
         <section>
             <div class="thumbnail">
@@ -75,10 +78,11 @@
         </section>
     </div>
 
-    <div>
+    <div class="row">
         <input type="checkbox" class="read-state" id="post-2"/>
 
-        <div class="read-more">
+
+	 <div class="read-more">
             <h1>A Movie</h1>
             <p>Review review review. . . </p>
             <p class="read-target">Keepin up with that review wow.</p>
